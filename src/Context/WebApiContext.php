@@ -282,7 +282,7 @@ class WebApiContext implements ApiClientAwareContext
      *
      * @return string
      */
-    private function prepareUrl($url)
+    protected function prepareUrl($url)
     {
         return ltrim($this->replacePlaceHolder($url), '/');
     }
